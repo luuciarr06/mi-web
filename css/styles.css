@@ -37,18 +37,54 @@
 * {
   box-sizing: border-box;
 }
-
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--header-height) + 24px);
+  background: var(--color-beige-50);
 }
 
 body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  line-height: 1.65;
+  overflow-x: hidden;
+  background: transparent;
+  position: relative;
+  isolation: isolate;
+}
+
+/* Fondo floral controlado */
+body::before {
+  content: "";
+  position: fixed;
+  inset: var(--header-height) 0 0 0;
+  z-index: -2;
+  pointer-events: none;
+
   background-image: url("../assets/img/fondo-floral.png");
-  background-size: 100% auto;        /* imagen al 100% de ancho, sin recortar */
-  background-position: top center;
   background-repeat: no-repeat;
-  background-attachment: scroll;     /* fixed + 100% no funciona bien en todos los navegadores */
+  background-position: top center;
+  background-size: 100% auto;
+
+  opacity: 0.55;
+}
+
+/* Capa clara encima del fondo para que el texto se lea bien */
+body::after {
+  content: "";
+  position: fixed;
+  inset: var(--header-height) 0 0 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(255, 250, 242, 0.94) 0%,
+      rgba(255, 250, 242, 0.88) 42%,
+      rgba(255, 250, 242, 0.45) 72%,
+      rgba(255, 250, 242, 0.12) 100%
+    );
 }
 
 body.menu-open {
@@ -1063,11 +1099,19 @@ select:focus {
 
 /* Responsive móvil */
 @media (max-width: 640px) {
-  body {
-    background-attachment: scroll;
-    background-size: 100% auto;
+  body::before {
+    position: absolute;
+    inset: var(--header-height) 0 0 0;
+    background-size: 160% auto;
     background-position: top center;
+    opacity: 0.45;
   }
+
+  body::after {
+    position: absolute;
+    inset: var(--header-height) 0 0 0;
+  }
+}
 
   .container {
     width: min(100% - 1.15rem, var(--container));
