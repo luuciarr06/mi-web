@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
+
 <body>
   <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 
@@ -87,6 +88,7 @@
           <p class="eyebrow">Quiénes somos</p>
           <h2 id="about-preview-title">Educamos desde el corazón, con mirada profesional.</h2>
         </div>
+
         <div class="about-preview__text reveal">
           <p>
             Raíces y Alas Educación nace para compartir recursos, reflexiones y propuestas que ayuden a
@@ -107,9 +109,11 @@
 
         <div class="carousel reveal" data-carousel>
           <button class="carousel__button carousel__button--prev" type="button" aria-label="Recurso anterior" data-carousel-prev>‹</button>
+
           <div class="carousel__viewport" tabindex="0">
             <div class="carousel__track" data-carousel-track></div>
           </div>
+
           <button class="carousel__button carousel__button--next" type="button" aria-label="Recurso siguiente" data-carousel-next>›</button>
         </div>
       </div>
@@ -122,6 +126,7 @@
           <p class="eyebrow">Comunidad</p>
           <h2 id="testimonials-title">Pequeñas voces que nos recuerdan por qué educamos.</h2>
         </div>
+
         <div class="testimonial-card reveal" data-testimonial-card aria-live="polite"></div>
       </div>
     </section>
@@ -134,6 +139,7 @@
           <h2 id="cta-title">Descarga una mini guía para trabajar emociones en casa y en el aula.</h2>
           <p>Incluye ideas sencillas, preguntas para conversar y una propuesta de actividad visual.</p>
         </div>
+
         <button class="button button--primary" type="button" data-open-download data-resource-title="Mini guía de emociones">
           Descargar gratis
         </button>
@@ -155,10 +161,12 @@
             <h3>Misión</h3>
             <p>Crear materiales y experiencias que ayuden a entender, nombrar y acompañar lo que sienten los niños y niñas.</p>
           </article>
+
           <article>
             <h3>Valores</h3>
             <p>Respeto, ternura, inclusión, creatividad, escucha activa y educación basada en vínculos seguros.</p>
           </article>
+
           <article>
             <h3>Mirada</h3>
             <p>Profesional y cercana, con recursos claros para familias, docentes y profesionales de la infancia.</p>
@@ -187,6 +195,7 @@
           <p class="eyebrow">Colección emociones</p>
           <h2 id="emotions-title">Aprender a sentir también es aprender a vivir.</h2>
         </div>
+
         <div class="emotion-grid" data-emotion-grid></div>
       </div>
     </section>
@@ -207,6 +216,7 @@
             <h3 id="calendar-title">Elige una fecha orientativa para una sesión.</h3>
             <p>Selecciona una opción y te responderemos para confirmar disponibilidad real.</p>
           </div>
+
           <div class="calendar__slots" data-calendar-slots></div>
           <p class="calendar__selected" data-calendar-selected aria-live="polite">Todavía no has seleccionado ninguna fecha.</p>
         </div>
@@ -220,6 +230,7 @@
           <p class="eyebrow">Blog / Reflexiones</p>
           <h2 id="blog-title">Ideas para mirar la infancia con más calma.</h2>
         </div>
+
         <div class="blog__grid" data-blog-grid></div>
       </div>
     </section>
@@ -234,12 +245,16 @@
             Cuéntanos qué necesitas: recursos, talleres, acompañamiento o colaboración.
             Te responderemos con una propuesta cercana y personalizada.
           </p>
+
           <div class="socials" aria-label="Redes sociales">
             <a href="https://www.instagram.com/raicesyalas.educacion/" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/icons/instagram.svg" alt="" aria-hidden="true" /> Instagram
+              <img src="./assets/icons/instagram.svg" alt="" aria-hidden="true" />
+              Instagram
             </a>
+
             <a href="mailto:hola@raicesyalas.educacion">
-              <img src="./assets/icons/mail.svg" alt="" aria-hidden="true" /> Email
+              <img src="./assets/icons/mail.svg" alt="" aria-hidden="true" />
+              Email
             </a>
           </div>
         </div>
@@ -250,11 +265,13 @@
             <input id="nombre" name="nombre" type="text" autocomplete="name" required />
             <small class="form-error" data-error-for="nombre"></small>
           </div>
+
           <div class="form-field">
             <label for="email">Correo electrónico</label>
             <input id="email" name="email" type="email" autocomplete="email" required />
             <small class="form-error" data-error-for="email"></small>
           </div>
+
           <div class="form-field">
             <label for="interes">¿Qué necesitas?</label>
             <select id="interes" name="interes" required>
@@ -267,11 +284,13 @@
             </select>
             <small class="form-error" data-error-for="interes"></small>
           </div>
+
           <div class="form-field">
             <label for="mensaje">Mensaje</label>
             <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
             <small class="form-error" data-error-for="mensaje"></small>
           </div>
+
           <button class="button button--primary" type="submit">Enviar mensaje</button>
           <p class="form-status" data-form-status aria-live="polite"></p>
         </form>
@@ -282,24 +301,32 @@
   <footer class="footer">
     <div class="container footer__grid">
       <div>
-        <a class="brand brand--footer" href="#home">
-          <span class="brand__mark" aria-hidden="true">🌱</span>
-          <span class="brand__text">Raíces y Alas</span>
+        <a class="brand brand--footer" href="#home" aria-label="Raíces y Alas Educación - Inicio">
+          <img
+            class="brand__logo"
+            src="./assets/img/logo.img.jpeg"
+            alt="Logo de Raíces y Alas Educación"
+          />
+          <span class="brand__text">Raíces y Alas Educación</span>
         </a>
+
         <p>“Raíces para sentirse seguros, alas para descubrir el mundo.”</p>
       </div>
+
       <nav aria-label="Menú secundario">
         <a href="#sobre-nosotras">Sobre nosotras</a>
         <a href="#recursos">Recursos</a>
         <a href="#emociones">Emociones</a>
         <a href="#contacto">Contacto</a>
       </nav>
+
       <div class="footer__icons" aria-label="Iconos decorativos">
         <img src="./assets/icons/heart.svg" alt="" aria-hidden="true" />
         <img src="./assets/icons/leaf.svg" alt="" aria-hidden="true" />
         <img src="./assets/icons/download.svg" alt="" aria-hidden="true" />
       </div>
     </div>
+
     <p class="footer__copy">© <span data-year></span> Raíces y Alas Educación. Todos los derechos reservados.</p>
   </footer>
 
@@ -307,14 +334,18 @@
   <dialog class="modal" data-download-modal aria-labelledby="modal-title">
     <div class="modal__content">
       <button class="modal__close" type="button" aria-label="Cerrar modal" data-close-download>×</button>
+
       <img src="./assets/icons/download.svg" alt="" aria-hidden="true" />
+
       <h2 id="modal-title">Descarga de recurso</h2>
       <p data-download-text>Déjanos tu correo y te enviaremos el recurso.</p>
+
       <form class="download-form" data-download-form>
         <label for="download-email">Correo electrónico</label>
         <input id="download-email" name="download-email" type="email" placeholder="tuemail@ejemplo.com" required />
         <button class="button button--primary" type="submit">Enviar recurso</button>
       </form>
+
       <p class="form-status" data-download-status aria-live="polite"></p>
     </div>
   </dialog>
