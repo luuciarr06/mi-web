@@ -1124,4 +1124,64 @@ select:focus {
   .footer__icons {
     justify-content: center;
   }
+   .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.brand__logo {
+  width: 58px;
+  height: 58px;
+  max-width: 58px;
+  max-height: 58px;
+  min-width: 58px;
+  min-height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 10px 24px rgba(95, 81, 66, 0.14);
+  border: 3px solid rgba(255, 255, 255, 0.9);
+}
+
+.brand__text {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-brown, #5f5142);
+  white-space: nowrap;
+}
+
+.site-header {
+  min-height: 92px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+@media (max-width: 900px) {
+  .brand__logo {
+    width: 48px;
+    height: 48px;
+    max-width: 48px;
+    max-height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+  }
+
+  .brand__text {
+    font-size: 1.05rem;
+  }
+}
 }
